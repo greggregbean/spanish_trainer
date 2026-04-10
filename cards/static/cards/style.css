@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Контейнер */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Заголовки */
+h1, h2 {
+    color: #222;
+    margin-bottom: 15px;
+}
+
+/* Ссылки */
+a {
+    color: #2c7be5;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Карточки слов */
+.card-item {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Кнопки */
+button {
+    background: #2c7be5;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #1a5fd1;
+}
+
+/* Формы */
+form {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* Картинки */
+img {
+    border-radius: 10px;
+    margin-top: 10px;
+    max-width: 200px;
+}
+
+/* Навигация */
+.nav {
+    margin-bottom: 20px;
+}
+
+.nav a {
+    background: #2c7be5;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin-right: 8px;
+}
+
+.nav a:hover {
+    background: #1a5fd1;
+}
+
+/* Квиз */
+.quiz-box {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.quiz-word {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+/* Результат */
+.result {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+}

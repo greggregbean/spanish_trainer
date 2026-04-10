@@ -1,7 +1,7 @@
+import random
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Topic, Card
 from .forms import CardForm, QuizForm, QuizStartForm, TopicForm
-import random
 
 
 def home(request):
