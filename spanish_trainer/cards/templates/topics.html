@@ -1,0 +1,13 @@
+<h2>Темы</h2>
+
+<ul>
+    {% for topic in topics %}
+        <li>
+            <a href="/topics/{{ topic.id }}/">
+                {{ topic.name }}
+            </a>
+        </li>
+    {% endfor %}
+</ul>
+
+<a href="/">Назад</a>

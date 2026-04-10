@@ -1,0 +1,11 @@
+<h2>{{ topic.name }}</h2>
+
+<ul>
+    {% for card in cards %}
+        <li>
+            {{ card.spanish_word }} — {{ card.translation }}
+        </li>
+    {% endfor %}
+</ul>
+
+<a href="/">Назад</a>
