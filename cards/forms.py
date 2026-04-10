@@ -2,6 +2,13 @@ from django import forms
 from .models import Card
 from .models import Topic
 
+class TopicForm(forms.ModelForm):
+    class Meta:
+        model = Topic
+        fields = ["name"]
+        labels = {
+            "name": "Название темы"
+        }
 
 class CardForm(forms.ModelForm):
     class Meta:

@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Topic, Card
-from .forms import CardForm, QuizForm, QuizStartForm
+from .forms import CardForm, QuizForm, QuizStartForm, TopicForm
 import random
 
 
@@ -21,6 +21,16 @@ def cards_by_topic(request, topic_id):
         "cards": cards
     })
 
+def add_topic(request):
+    if request.method == "POST":
+        form = TopicForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect("topics")
+    else:
+        form = TopicForm()
+
+    return render(request, "add_topic.html", {"form": form})
 
 def add_card(request):
     if request.method == "POST":

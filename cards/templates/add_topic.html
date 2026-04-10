@@ -1,0 +1,9 @@
+<h2>Добавить тему</h2>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Сохранить</button>
+</form>
+
+<a href="/topics/">Назад</a>
