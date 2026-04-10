@@ -7,4 +7,5 @@ urlpatterns = [
     path('topics/<int:topic_id>/', views.cards_by_topic, name='cards'),
     path('add/', views.add_card, name='add_card'),
     path('quiz/', views.quiz, name='quiz'),
+    path('quiz/start/', views.quiz_start, name='quiz_start')
 ]

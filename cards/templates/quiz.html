@@ -1,21 +1,13 @@
-<h2>Переведите слово</h2>
-
-{% if error %}
-<p>{{ error }}</p>
-{% else %}
+<h2>Вопрос {{ number }} из {{ total }}</h2>
 
 <h1>{{ card.spanish_word }}</h1>
 
 {% if card.image %}
-    <img src="{{ card.image }}" width="200">
+<img src="{{ card.image }}" width="200">
 {% endif %}
 
 <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit">Проверить</button>
+    <button type="submit">Ответить</button>
 </form>
-
-{% endif %}
-
-<a href="/">Назад</a>

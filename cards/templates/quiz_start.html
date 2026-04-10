@@ -1,0 +1,9 @@
+<h2>Начать квиз</h2>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Начать</button>
+</form>
+
+<a href="/">Назад</a>

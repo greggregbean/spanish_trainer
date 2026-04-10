@@ -1,13 +1,6 @@
-{% if correct %}
-<h2>Правильно!</h2>
-{% else %}
-<h2>Неправильно</h2>
-<p>Правильный ответ: {{ card.translation }}</p>
-{% endif %}
+<h2>Квиз завершён</h2>
 
-{% if card.image %}
-<img src="{{ card.image }}" width="200">
-{% endif %}
+<p>Вы ответили правильно на {{ score }} из {{ total }}</p>
 
-<br>
-<a href="/quiz/">Следующий вопрос</a>
+<a href="/quiz/">Начать заново</a>
+<a href="/">На главную</a>
