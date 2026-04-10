@@ -6,6 +6,10 @@
 
 <h1>{{ card.spanish_word }}</h1>
 
+{% if card.image %}
+    <img src="{{ card.image }}" width="200">
+{% endif %}
+
 <form method="post">
     {% csrf_token %}
     {{ form.as_p }}

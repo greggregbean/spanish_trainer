@@ -3,7 +3,11 @@
 <ul>
     {% for card in cards %}
         <li>
-            {{ card.spanish_word }} — {{ card.translation }}
+            <b>{{ card.spanish_word }}</b> — {{ card.translation }} <br>
+
+            {% if card.image %}
+                <img src="{{ card.image }}" width="150">
+            {% endif %}
         </li>
     {% endfor %}
 </ul>

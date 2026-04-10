@@ -5,4 +5,9 @@
 <p>Правильный ответ: {{ card.translation }}</p>
 {% endif %}
 
+{% if card.image %}
+<img src="{{ card.image }}" width="200">
+{% endif %}
+
+<br>
 <a href="/quiz/">Следующий вопрос</a>
